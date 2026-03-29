@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaby's Budapest | Demo</title>
+  <meta name="description" content="Modern demo website concept for Gaby's Budapest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <span class="brand-name">Gaby's Budapest</span>
+      <span class="brand-tag" data-i18n="brandTag">Brunch • Kávé • Koktélok</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#favorites" data-i18n="navFavorites">Kedvencek</a>
+      <a href="#story" data-i18n="navStory">Rólunk</a>
+      <a href="#menu" data-i18n="navMenu">Étlap</a>
+      <a href="#visit" data-i18n="navVisit">Kapcsolat</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="hu">🇭🇺 HU</button>
+        <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+      </div>
+      <a class="header-cta" href="#menu" data-i18n="headerCta">Menü megnyitása</a>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="#favorites" data-i18n="navFavorites">Kedvencek</a>
+    <a href="#story" data-i18n="navStory">Rólunk</a>
+    <a href="#menu" data-i18n="navMenu">Étlap</a>
+    <a href="#visit" data-i18n="navVisit">Kapcsolat</a>
+  </div>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Budapesti brunch spot újragondolva</p>
+        <h1 data-i18n="heroTitle">Színes tányérok, laza városi hangulat, fiatalos webélmény.</h1>
+        <p class="hero-text" data-i18n="heroText">
+          Ez a demo koncepció a Gaby's Budapest karakterére épül: erős tipográfia, meleg színek, gyors mobilos élmény és egy olyan vibe, amit jó érzés elküldeni bárkinek.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu" data-i18n="heroBtn1">Étlap böngészése</a>
+          <a class="btn btn-secondary" href="#visit" data-i18n="heroBtn2">Asztalfoglalás</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li data-i18n="meta1">Brunch & breakfast</li>
+          <li data-i18n="meta2">1136 Budapest</li>
+          <li data-i18n="meta3">Magyar / English</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-main">
+          <img src="assets/g4.jpg" alt="Chicken and waffles" />
+        </div>
+        <div class="hero-float hero-float-1">
+          <img src="assets/g1.jpg" alt="Avocado salad bowl" />
+        </div>
+        <div class="hero-float hero-float-2">
+          <img src="assets/g3.jpg" alt="Shrimp plate with sandwich" />
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section reveal">
+      <div class="stat">
+        <strong>96%</strong>
+        <span data-i18n="stat1">ajánlja</span>
+      </div>
+      <div class="stat">
+        <strong>$$</strong>
+        <span data-i18n="stat2">könnyen szerethető árak</span>
+      </div>
+      <div class="stat">
+        <strong data-i18n="stat3Value">All day</strong>
+        <span data-i18n="stat3">brunch, kávé, italok</span>
+      </div>
+      <div class="stat">
+        <strong>Katona 41</strong>
+        <span data-i18n="stat4">Budapest XIII.</span>
+      </div>
+    </section>
+
+    <section id="favorites" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="favEyebrow">Kedvenc fogások</p>
+        <h2 data-i18n="favTitle">Fiatalos, színes, fotóbarát kaja, amitől rögtön megjön a kedv a helyhez.</h2>
+        <p data-i18n="favText">A főoldal itt nem csak informál, hanem hangulatot is ad. Ez különösen fontos egy brunch helynek.</p>
+      </div>
+
+      <div class="favorites-grid">
+        <article class="food-card reveal">
+          <img src="assets/g1.jpg" alt="Avocado bowl" />
+          <div class="food-copy">
+            <h3 data-i18n="card1Title">Avokádós salátatál</h3>
+            <p data-i18n="card1Text">Friss zöldek, paradicsom, kukorica, avokádó és könnyed, napfényes összhatás.</p>
+          </div>
+        </article>
+
+        <article class="food-card reveal">
+          <img src="assets/g3.jpg" alt="Sandwich and shrimp plate" />
+          <div class="food-copy">
+            <h3 data-i18n="card2Title">Garnélás brunch tányér</h3>
+            <p data-i18n="card2Text">Laza city brunch hangulat, pirítós, saláta és egy tányér, ami azonnal megállít scroll közben.</p>
+          </div>
+        </article>
+
+        <article class="food-card reveal">
+          <img src="assets/g4.jpg" alt="Chicken and waffles" />
+          <div class="food-copy">
+            <h3 data-i18n="card3Title">Chicken & waffles</h3>
+            <p data-i18n="card3Text">Édes-sós comfort food modern tálalással és erős vizuális karakterrel.</p>
+          </div>
+        </article>
+
+        <article class="food-card reveal wide">
+          <img src="assets/g5.jpg" alt="Toast plate with beer" />
+          <div class="food-copy">
+            <h3 data-i18n="card4Title">Baráti ebéd vibe</h3>
+            <p data-i18n="card4Text">Nem steril éttermi érzés, hanem laza, fiatalos, “ide beülnénk most” atmoszféra.</p>
+          </div>
+        </article>
+
+        <article class="food-card reveal">
+          <img src="assets/g2.jpg" alt="Croissants and pastries" />
+          <div class="food-copy">
+            <h3 data-i18n="card5Title">Péksüti & kávé pillanat</h3>
+            <p data-i18n="card5Text">Reggelihez, gyors találkozókhoz és azokhoz, akik először a hangulatba szeretnek bele.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="story-copy reveal">
+        <p class="eyebrow" data-i18n="storyEyebrow">Miért működik ez</p>
+        <h2 data-i18n="storyTitle">Modern, menő és gyors. Nem túl designeres, mégis nagyon késznek hat.</h2>
+        <p data-i18n="storyP1">
+          A dizájn direkt fiatalosabb lett: nagy címek, erős színblokkok, üvegszerű kártyák és dinamikus képkezelés.
+        </p>
+        <p data-i18n="storyP2">
+          A cél az, hogy a látogató 5 másodperc alatt értse: ez egy karakteres, trendi budapesti hely, ahova jó beülni.
+        </p>
+      </div>
+
+      <div class="story-visual reveal">
+        <div class="story-stack">
+          <img class="story-main" src="assets/g6.jpg" alt="Street menu by Gaby's" />
+          <img class="story-float" src="assets/g5.jpg" alt="Coffee and brunch detail" />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-preview">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="menuEyebrow">Étlap preview</p>
+        <h2 data-i18n="menuTitle">Nagyobb felbontású étlapképek, tiszta grid és egy kattintásos nagyítás.</h2>
+        <p data-i18n="menuText">Az összes menükártya nagyítható, így telefonon is kényelmesebb és komolyabb az élmény.</p>
+      </div>
+
+      <div class="menu-grid">
+        <button class="menu-card reveal" data-image="assets/Képernyőfotó 2026-03-29 - 21.59.06.png" data-title-hu="Reggeli, saláták, szendvicsek" data-title-en="Breakfast, salads, sandwiches">
+          <img src="assets/Képernyőfotó 2026-03-29 - 21.59.06.png" alt="Breakfast menu" />
+          <span data-i18n="menuCard1">Reggeli & szendvicsek</span>
+        </button>
+
+        <button class="menu-card reveal" data-image="assets/Képernyőfotó 2026-03-29 - 21.59.34.png" data-title-hu="Italok és borok" data-title-en="Drinks and wine">
+          <img src="assets/Képernyőfotó 2026-03-29 - 21.59.34.png" alt="Drinks menu" />
+          <span data-i18n="menuCard2">Italok & borok</span>
+        </button>
+
+        <button class="menu-card reveal" data-image="assets/Képernyőfotó 2026-03-29 - 21.59.53.png" data-title-hu="Koktélok és shotok" data-title-en="Cocktails and shots">
+          <img src="assets/Képernyőfotó 2026-03-29 - 21.59.53.png" alt="Cocktails menu" />
+          <span data-i18n="menuCard3">Koktélok</span>
+        </button>
+
+        <button class="menu-card reveal" data-image="assets/Képernyőfotó 2026-03-29 - 22.01.05.png" data-title-hu="Desszertek" data-title-en="Desserts">
+          <img src="assets/Képernyőfotó 2026-03-29 - 22.01.05.png" alt="Dessert menu" />
+          <span data-i18n="menuCard4">Desszertek</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section gallery-band">
+      <div class="gallery-grid">
+        <div class="gallery-tile reveal"><img src="assets/g1.jpg" alt="Salad" /></div>
+        <div class="gallery-tile reveal"><img src="assets/g2.jpg" alt="Pastries" /></div>
+        <div class="gallery-tile tall reveal"><img src="assets/g3.jpg" alt="Brunch plate" /></div>
+        <div class="gallery-tile wide reveal"><img src="assets/g4.jpg" alt="Chicken waffles" /></div>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="visit-card reveal">
+        <p class="eyebrow" data-i18n="visitEyebrow">Kapcsolat</p>
+        <h2 data-i18n="visitTitle">Ez már egy elküldhető demo link szint. Gyors, modern és ügyfélbarát.</h2>
+
+        <div class="visit-info">
+          <div>
+            <span data-i18n="visitAddressLabel">Cím</span>
+            <strong data-i18n="visitAddressValue">Katona József utca 41, Budapest, 1136</strong>
+          </div>
+          <div>
+            <span data-i18n="visitPhoneLabel">Telefon</span>
+            <strong>+36 70 317 7771</strong>
+          </div>
+          <div>
+            <span data-i18n="visitLangLabel">Nyelvek</span>
+            <strong data-i18n="visitLangValue">Magyar és angol</strong>
+          </div>
+          <div>
+            <span data-i18n="visitPriceLabel">Árkategória</span>
+            <strong>$$</strong>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+36703177771" data-i18n="visitBtn1">Hívás most</a>
+          <a class="btn btn-secondary" href="#menu" data-i18n="visitBtn2">Étlap megnézése</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer1">Demo koncepció a Gaby's Budapest számára</p>
+    <p data-i18n="footer2">Mobilra optimalizált, modern, képekre épülő éttermi landing oldal.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close preview">×</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-image" src="" alt="" />
+      <p id="lightbox-title"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
